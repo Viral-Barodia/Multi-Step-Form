@@ -16,7 +16,7 @@ body{
 
 .navbar{
     color: white;
-    background-image: url('/multi-step-form-main/assets/images/bg-sidebar-desktop.svg');
+    background-image: url('./bg-sidebar-desktop.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
