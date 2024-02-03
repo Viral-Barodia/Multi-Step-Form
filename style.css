@@ -1,0 +1,414 @@
+body{
+    font-size: 16px;
+    background-color: hsl(228, 100%, 84%);
+}
+
+#central{
+    width: 50%;
+    height: 25rem;
+    border-radius: 0.5%;
+    padding: 1.5rem;
+    display: inline-flex;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.navbar{
+    color: white;
+    background-image: url('/multi-step-form-main/assets/images/bg-sidebar-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: -1rem;
+    border-radius: 3%;
+}
+
+ol{
+    list-style-type: none;
+    padding-left: 0rem;
+    margin: 0rem;
+}
+
+li{
+    margin: 2rem;
+    display: flex;
+}
+
+.numberCircle{
+    border-radius: 50%;
+    width: 2.8rem;
+    height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: larger;
+    display: block;
+    border-color: white;
+    border-style: solid;
+    padding-top: 0.65rem;
+}
+
+.step-number{
+    font-weight: lighter;
+    font-size: 15px;
+    display: block;
+    margin: 0.25rem;
+}
+
+.step-detail{
+    font-weight: bold;
+    font-size: 0.83rem;
+    display: block;
+    margin: 0.25rem;
+}
+
+.main{
+    padding-left: 3rem;
+    /* padding-right: 0rem; */
+    width: 100%;
+    position: relative;
+}
+
+.heading{
+    font-size: 2em;
+    font-weight: bold;
+    color: hsl(213, 96%, 18%);
+}
+
+.subtext{
+    font-size: 1em;
+    color: hsl(229, 24%, 50%);
+}
+
+label{
+    color: hsl(243, 100%, 62%);
+    font-size: 1rem;
+}
+
+.info-boxes{
+    border-radius: 0.35rem;
+    width: 100%;
+    border-color: hsl(229, 24%, 50%);
+    margin-bottom: 2rem;
+    height: 2rem;
+}
+
+.info-boxes::before{
+    border-color: hsl(229, 24%, 50%);
+}
+
+.info-boxes::selection{
+    border-color: purple;
+}
+
+section{
+    height: 100%;
+    display: none;
+}
+
+/* ********************************** Step 2 *************************************** */
+
+#plan-type{
+    display: flex;
+}
+
+#plan-type button{
+    background-color: white;
+    border-radius: 5%;
+    height: 10rem;
+    width: 33.333%;
+    position: relative;
+}
+
+#arcade{
+    margin-right: 5%;
+}
+
+#advanced{
+    margin-right: 5%;
+}
+
+#plan-type button:hover{
+    border-color: blueviolet;
+    background-color: hsl(263, 100%, 91%);
+}
+
+#plan-type:checked{
+    background-color: aquamarine;
+}
+
+#plan-type button img{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.plan-type-text{
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 1.9rem;
+    left: 1rem;
+}
+
+.plan-rate{
+    position: absolute;
+    bottom: 0.65rem;
+    left: 1rem;
+    color: hsl(229, 24%, 50%);
+}
+
+#switch{
+    background-color: hsl(231, 100%, 99%);
+    text-align: center;
+    height: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.switch-box{
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 0.8rem;
+    width: 1rem;
+    left: 0.1rem;
+    bottom: 0.1rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0.1rem #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(0.8rem);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 5%;
+  }
+
+/* ********************************** Step 3 *************************************** */
+
+.add-on-area{
+    height: 5%;
+}
+
+.add-on-area div{
+    background-color: white;
+    border-color: hsl(228, 100%, 84%);
+    border-style: solid;
+    height: 33.333%;
+    margin-bottom: 5%;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.check{
+    zoom: 1.5;
+    position: absolute;
+    left: 0.1rem;
+    top: 0.55rem;
+}
+
+.add-on-name{
+    display: inline-block;
+    color: hsl(213, 96%, 18%);
+    font-weight: 800;
+    font-size: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.add-on-desc{
+    display: inline-block;
+    margin-left: 2.5rem;
+    width: 50%;
+    color: hsl(229, 24%, 50%);
+}
+
+.add-on-rate{
+    border-color: hsl(228, 100%, 84%);
+    float: right;
+    position: absolute;
+    right: 1.3rem;
+    bottom: 1rem;
+}
+
+/* ********************************** Step 4 *************************************** */
+
+.calculation{
+    background-color: hsl(260, 48%, 94%);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+#plan-type-calc{
+    font-weight: bold;
+    color: hsl(213, 96%, 18%);
+    display: block;
+    width: 50%;
+}
+
+#change{
+    font-size: 1em;
+    color: hsl(229, 24%, 50%);
+    text-decoration: underline;
+    text-decoration-color: hsl(229, 24%, 50%);
+    display: block;
+    width: 50%;
+}
+
+#total-charge{
+    color: hsl(213, 96%, 18%);
+    position: absolute;
+    top: 2rem;
+    right: 1.2rem;
+    font-weight: 600;
+}
+
+#add-on-desc-disp{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    color: #344;
+}
+
+.add-on-name-disp{
+    height: 2rem;
+    width: 50%;
+}
+
+#total{
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#total-text{
+    color: hsl(213, 96%, 18%);
+    font-weight: 800;
+}
+
+#total-num{
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+}
+
+/* ********************************** Step 5 *************************************** */
+
+.thank-you{
+    padding: 4rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.thank-you > img{
+    width: 20%;
+    height: 20%;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+
+#thanks-heading{
+    color: hsl(213, 96%, 18%);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#thanks-desc{
+    color: hsl(229, 24%, 50%);
+    margin: auto;
+    width: 100%;
+}
+
+/* *********************************** NavButtons ************************************* */
+
+#buttons{
+    bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next{
+    background-color: hsl(213, 97%, 28%);
+    color: white;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    height: 2rem;
+    width: 6rem;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.next:hover{
+    background-color: white;
+    color: hsl(213, 97%, 28%);
+    border-color: hsl(213, 97%, 28%);
+}
+
+.back{
+    color: hsl(229, 24%, 50%);
+    background-color: white;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    height: 2rem;
+    width: 6rem;
+    margin: 0rem;
+    padding: 0rem;
+    border: none;
+}
+
+.back:hover{
+    color: hsl(243, 100%, 62%);
+    border-style: solid;
+    box-shadow: hsl(229, 24%, 50%);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.active{
+    display: block;
+}

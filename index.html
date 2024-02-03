@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game plan</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="central">
+
+            <!-- ***************************** Navbar ******************************** -->
+            <nav class="navbar">
+                <ol id="the-list">
+                    <li>
+                        <span class="numberCircle">1</span>
+                        <div class="steps">
+                            <span class="step-number">Step 1</span>
+                            <span class="step-detail">YOUR INFO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numberCircle">2</span>
+                        <div class="steps">
+                            <span class="step-number">Step 2</span>
+                            <span class="step-detail">SELECT PLAN</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numberCircle">3</span>
+                        <div clas="steps">
+                            <span class="step-number">Step 3</span>
+                            <span class="step-detail">ADD-ONS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="numberCircle">4</span>
+                        <div clas="steps">
+                            <span class="step-number">Step 4</span>
+                            <span class="step-detail">SUMMARY</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- ****************************** Main ********************************* -->
+
+            <div class="main">
+                <form data-multi-step name="multi-step-form">
+                    <!-- ----------------------------Step 1------------------------------- -->
+                    
+                    <section class="form-step one active">
+                        <span class="heading">Personal Info</span>
+                        <br>
+                        <span class="subtext">Please provide your name, email-address and phone number.</span>
+                        <br><br><br>
+
+                        <label for="name">Name</label><br>
+                        <input autocomplete="name" id="name" class="info-boxes" type="text" placeholder="Ex. John Doe" required><br>
+                        <label for="email">Email Address</label><br>
+                        <input autocomplete="email" id="email" class="info-boxes" type="text" placeholder="Ex. abc@xyz.com" required><br>
+                        <label for="number">Phone Number</label><br>
+                        <input autocomplete="tel" id="number" class="info-boxes" type="tel" placeholder="Ex. 97129xxx66" required><br>
+                    </section>
+                    
+                    <!-- ----------------------------Step 2-------------------------------- -->
+                    
+                    <section class="form-step two">
+                        <span class="heading">Select your plan</span>
+                        <br>
+                        <span class="subtext">You have the option of monthly or yearly billing</span>
+                        <br><br><br>
+
+                        <div id="plan-type">
+                            <button class="btn-plan-type" id="arcade" value="arcade">
+                                <img src="/multi-step-form-main/assets/images/icon-arcade.svg">
+                                <div class="plan-type-text">Arcade</div>
+                                <div class="plan-rate">$9/mo</div>
+                            </button>
+
+                            <button class="btn-plan-type" id="advanced" value="advanced">
+                                <img src="/multi-step-form-main/assets/images/icon-advanced.svg">
+                                <div class="plan-type-text">Advanced</div>
+                                <div class="plan-rate">$12/mo</div>
+                            </button>
+
+                            <button class="btn-plan-type" id="pro" value="pro">
+                                <img src="/multi-step-form-main/assets/images/icon-pro.svg">
+                                <div class="plan-type-text">Pro</div>
+                                <div class="plan-rate">$15/mo</div>
+                            </button>
+                        </div>
+
+                        <div id="switch">
+                            <span class="plan-duration">Monthly</span>
+                            <label class="switch-box">
+                                <input type="checkbox" id="durationSwitch">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="plan-duration">Yearly</span>
+                        </div>
+
+                    </section>
+
+                    <!-- ----------------------------Step 3-------------------------------- -->
+                    <section class="form-step three">
+                        <span class="heading">Pick add-ons</span>
+                        <br>
+                        <span class="subtext">Add-ons help enhance your gaming experience.</span>
+                        <br><br><br>
+
+                        <div class="add-on-area">
+                            <div class="add-on">
+                                <label class="add-on-label">
+                                    <input type="checkbox" class="check">
+                                    <span class="add-on-name">Online service</span>
+                                    <span class="add-on-desc">Access to multiplayer games</span>
+                                    <span class="add-on-rate">+$1/mo</span>
+                                </label>
+                            </div>
+
+                            <div class="add-on">
+                                <label class="add-on-label">
+                                    <input type="checkbox" class="check">
+                                    <span class="add-on-name">Larger storage</span>
+                                    <span class="add-on-desc">Extra 1TB of cloud storage</span>
+                                    <span class="add-on-rate">+$2/mo</span>
+                                </label>
+                            </div>
+
+                            <div class="add-on">
+                                <label class="add-on-label">
+                                    <input type="checkbox" class="check">
+                                    <span class="add-on-name">Customizable profile</span>
+                                    <span class="add-on-desc">Custom theme on your profile</span>
+                                    <span class="add-on-rate">+$2/mo</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- ----------------------------Step 4---------------------------------- -->
+                    <section class="form-step four">
+                        <span class="heading">Finishing up</span>
+                        <br>
+                        <span class="subtext">Double check everything before confirming</span>
+                        <br><br><br>
+
+                        <div class="calculation">
+                            <span id="plan-type-calc"></span>
+                            <a href="#"><span id="change">Change</span></a>
+                            <span id="total-charge"></span>
+                            <hr>
+                            <div id="add-ons">
+                                <div id="add-on-desc-disp">
+                                    <div class="add-on-name-disp"></div>
+                                    <div class="add-on-rate-disp"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="total">
+                            <span id="total-text">Total (per year)</span>
+                            <span id="total-num"></span>
+                        </div>
+
+                    </section>
+
+                    <!-- ----------------------------Step 5------------------------------- -->
+                    <section class="form-step five">
+                        <div class="thank-you">
+                            <img src="/multi-step-form-main/assets/images/icon-thank-you.svg">
+                            <div id="thanks-heading">Thank you!</div>
+                            <div id="thanks-desc">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@ipsumgaming.com</div>
+                        </div>
+                    </section>
+                </form>
+                
+                <div id="buttons">
+                    <button class="back">Go Back</button>
+                    <button class="next">Next step</button>
+                </div>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
